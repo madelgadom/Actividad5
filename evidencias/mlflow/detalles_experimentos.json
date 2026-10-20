@@ -1,0 +1,385 @@
+[
+    {
+        "id": "7bfb40faf087414298f40df7dca17bed",
+        "nombre": "Comparacion_Estadistica",
+        "estado": "FINISHED",
+        "parametros": {
+            "prueba": "McNemar",
+            "nivel_significancia": "0.05",
+            "modelos": "Regresion Logistica vs Random Forest"
+        },
+        "metricas": {
+            "estadistico_mcnemar": 2026.0655383507383,
+            "valor_p_mcnemar": 0.0,
+            "diferencia_significativa": 1.0
+        },
+        "artefactos": [
+            {
+                "ruta": "comparacion_estadistica.csv",
+                "directorio": false
+            },
+            {
+                "ruta": "comparacion_estadistica.png",
+                "directorio": false
+            }
+        ]
+    },
+    {
+        "id": "c345d95392c343269cfbf13dd1b769f1",
+        "nombre": "Comparacion_Final_Modelos",
+        "estado": "FINISHED",
+        "parametros": {},
+        "metricas": {},
+        "artefactos": [
+            {
+                "ruta": "comparacion_final.csv",
+                "directorio": false
+            }
+        ]
+    },
+    {
+        "id": "604b272bff674802b7fc7c9e0839795d",
+        "nombre": "Random_Forest_Evaluacion_Final",
+        "estado": "FINISHED",
+        "parametros": {
+            "algoritmo": "Random_Forest",
+            "conjunto": "test.csv",
+            "registros_prueba": "25976"
+        },
+        "metricas": {
+            "exactitud_test": 0.9631967970434246,
+            "precision_test": 0.9715626974812674,
+            "sensibilidad_test": 0.9437867227922476,
+            "f1_test": 0.9574733096085409,
+            "roc_auc_test": 0.994038841452112
+        },
+        "artefactos": [
+            {
+                "ruta": "Random_Forest_evaluacion.png",
+                "directorio": false
+            }
+        ]
+    },
+    {
+        "id": "1f56ca0133c945bb820333feaff28cdf",
+        "nombre": "Regresion_Logistica_Evaluacion_Final",
+        "estado": "FINISHED",
+        "parametros": {
+            "algoritmo": "Regresion_Logistica",
+            "conjunto": "test.csv",
+            "registros_prueba": "25976"
+        },
+        "metricas": {
+            "exactitud_test": 0.8718432399137666,
+            "precision_test": 0.8693504117108874,
+            "sensibilidad_test": 0.8332894852231869,
+            "f1_test": 0.8509380737025926,
+            "roc_auc_test": 0.9255961809965979
+        },
+        "artefactos": [
+            {
+                "ruta": "Regresion_Logistica_evaluacion.png",
+                "directorio": false
+            }
+        ]
+    },
+    {
+        "id": "69f50a7168b041a9a12db5aadbccc69d",
+        "nombre": "Random_Forest_Evaluacion_Final",
+        "estado": "FAILED",
+        "parametros": {
+            "algoritmo": "Random_Forest",
+            "conjunto": "test.csv",
+            "registros_prueba": "25976"
+        },
+        "metricas": {
+            "exactitud_test": 0.9631967970434246,
+            "precision_test": 0.9715626974812674,
+            "sensibilidad_test": 0.9437867227922476,
+            "f1_test": 0.9574733096085409,
+            "roc_auc_test": 0.994038841452112
+        },
+        "artefactos": [
+            {
+                "ruta": "Random_Forest_evaluacion.png",
+                "directorio": false
+            }
+        ]
+    },
+    {
+        "id": "5b6155e742674e7cb83088e7c03700b0",
+        "nombre": "Regresion_Logistica_Evaluacion_Final",
+        "estado": "FINISHED",
+        "parametros": {
+            "algoritmo": "Regresion_Logistica",
+            "conjunto": "test.csv",
+            "registros_prueba": "25976"
+        },
+        "metricas": {
+            "exactitud_test": 0.8718432399137666,
+            "precision_test": 0.8693504117108874,
+            "sensibilidad_test": 0.8332894852231869,
+            "f1_test": 0.8509380737025926,
+            "roc_auc_test": 0.9255961809965979
+        },
+        "artefactos": [
+            {
+                "ruta": "Regresion_Logistica_evaluacion.png",
+                "directorio": false
+            }
+        ]
+    },
+    {
+        "id": "9731a1d2c7b64aae90aa2f131cf2ecc9",
+        "nombre": "Regresion_Logistica_Evaluacion_Final",
+        "estado": "FAILED",
+        "parametros": {
+            "algoritmo": "Regresion_Logistica",
+            "conjunto": "test.csv",
+            "registros_prueba": "25976"
+        },
+        "metricas": {
+            "exactitud_test": 0.8718432399137666,
+            "precision_test": 0.8693504117108874,
+            "sensibilidad_test": 0.8332894852231869,
+            "f1_test": 0.8509380737025926,
+            "roc_auc_test": 0.9255961809965979
+        },
+        "artefactos": [
+            {
+                "ruta": "Regresion_Logistica_evaluacion.png",
+                "directorio": false
+            }
+        ]
+    },
+    {
+        "id": "d8d20c1b54cf46a2bab2c3cdb0aec17a",
+        "nombre": "Random_Forest_Optimizado",
+        "estado": "FINISHED",
+        "parametros": {
+            "algoritmo": "Random_Forest",
+            "metodo": "GridSearchCV",
+            "particiones": "3",
+            "metrica_optimizacion": "f1",
+            "clasificacion__max_depth": "20",
+            "clasificacion__min_samples_split": "2",
+            "clasificacion__n_estimators": "100"
+        },
+        "metricas": {
+            "mejor_f1_validacion": 0.9554380331906213,
+            "combinaciones_evaluadas": 8.0
+        },
+        "artefactos": [
+            {
+                "ruta": "Random_Forest_gridsearch.csv",
+                "directorio": false
+            }
+        ]
+    },
+    {
+        "id": "064952ed5ee64729a5137a6e2055e373",
+        "nombre": "Regresion_Logistica_Optimizado",
+        "estado": "FINISHED",
+        "parametros": {
+            "algoritmo": "Regresion_Logistica",
+            "metodo": "GridSearchCV",
+            "particiones": "3",
+            "metrica_optimizacion": "f1",
+            "clasificacion__C": "10",
+            "clasificacion__max_iter": "1000"
+        },
+        "metricas": {
+            "mejor_f1_validacion": 0.8531693071818435,
+            "combinaciones_evaluadas": 3.0
+        },
+        "artefactos": [
+            {
+                "ruta": "Regresion_Logistica_gridsearch.csv",
+                "directorio": false
+            }
+        ]
+    },
+    {
+        "id": "2171e4d2610b4077afbfb1312a39c867",
+        "nombre": "Random_Forest",
+        "estado": "FINISHED",
+        "parametros": {
+            "algoritmo": "Random_Forest",
+            "particiones": "5",
+            "registros": "103904",
+            "semilla": "42",
+            "modelo_bootstrap": "True",
+            "modelo_ccp_alpha": "0.0",
+            "modelo_class_weight": "None",
+            "modelo_criterion": "gini",
+            "modelo_max_depth": "10",
+            "modelo_max_features": "sqrt",
+            "modelo_max_leaf_nodes": "None",
+            "modelo_max_samples": "None",
+            "modelo_min_impurity_decrease": "0.0",
+            "modelo_min_samples_leaf": "1",
+            "modelo_min_samples_split": "2",
+            "modelo_min_weight_fraction_leaf": "0.0",
+            "modelo_monotonic_cst": "None",
+            "modelo_n_estimators": "100",
+            "modelo_n_jobs": "-1",
+            "modelo_oob_score": "False",
+            "modelo_random_state": "42",
+            "modelo_verbose": "0",
+            "modelo_warm_start": "False"
+        },
+        "metricas": {
+            "exactitud_promedio": 0.9472782330272354,
+            "exactitud_desviacion": 0.001890468026912745,
+            "precision_promedio": 0.9459852664844158,
+            "precision_desviacion": 0.0022418896898196063,
+            "sensibilidad_promedio": 0.93152692948362,
+            "sensibilidad_desviacion": 0.0033599377041671785,
+            "f1_promedio": 0.9386970243889191,
+            "f1_desviacion": 0.0022444110480301133,
+            "roc_auc_promedio": 0.9902154200104569,
+            "roc_auc_desviacion": 0.0005899697191416676
+        },
+        "artefactos": []
+    },
+    {
+        "id": "89846ebe83ce409c813bd11d748f6d5b",
+        "nombre": "Regresion_Logistica",
+        "estado": "FINISHED",
+        "parametros": {
+            "algoritmo": "Regresion_Logistica",
+            "particiones": "5",
+            "registros": "103904",
+            "semilla": "42",
+            "modelo_C": "1.0",
+            "modelo_class_weight": "None",
+            "modelo_dual": "False",
+            "modelo_fit_intercept": "True",
+            "modelo_intercept_scaling": "1",
+            "modelo_l1_ratio": "None",
+            "modelo_max_iter": "1000",
+            "modelo_multi_class": "deprecated",
+            "modelo_n_jobs": "None",
+            "modelo_penalty": "l2",
+            "modelo_random_state": "42",
+            "modelo_solver": "lbfgs",
+            "modelo_tol": "0.0001",
+            "modelo_verbose": "0",
+            "modelo_warm_start": "False"
+        },
+        "metricas": {
+            "exactitud_promedio": 0.8752117186707948,
+            "exactitud_desviacion": 0.002184826013953158,
+            "precision_promedio": 0.8708166980666627,
+            "precision_desviacion": 0.004397690823531409,
+            "sensibilidad_promedio": 0.8360910605219323,
+            "sensibilidad_desviacion": 0.004363549740008556,
+            "f1_promedio": 0.8530857759709697,
+            "f1_desviacion": 0.0025396580095578872,
+            "roc_auc_promedio": 0.9266763583365458,
+            "roc_auc_desviacion": 0.0018911977295232156
+        },
+        "artefactos": []
+    },
+    {
+        "id": "227c4632bc4749f68c85f849111f80d1",
+        "nombre": "Random_Forest",
+        "estado": "FINISHED",
+        "parametros": {
+            "algoritmo": "Random_Forest",
+            "particiones": "5",
+            "registros": "103904",
+            "semilla": "42",
+            "modelo_bootstrap": "True",
+            "modelo_ccp_alpha": "0.0",
+            "modelo_class_weight": "None",
+            "modelo_criterion": "gini",
+            "modelo_max_depth": "10",
+            "modelo_max_features": "sqrt",
+            "modelo_max_leaf_nodes": "None",
+            "modelo_max_samples": "None",
+            "modelo_min_impurity_decrease": "0.0",
+            "modelo_min_samples_leaf": "1",
+            "modelo_min_samples_split": "2",
+            "modelo_min_weight_fraction_leaf": "0.0",
+            "modelo_monotonic_cst": "None",
+            "modelo_n_estimators": "100",
+            "modelo_n_jobs": "-1",
+            "modelo_oob_score": "False",
+            "modelo_random_state": "42",
+            "modelo_verbose": "0",
+            "modelo_warm_start": "False"
+        },
+        "metricas": {
+            "exactitud_promedio": 0.9472782330272354,
+            "exactitud_desviacion": 0.001890468026912745,
+            "precision_promedio": 0.9459852664844158,
+            "precision_desviacion": 0.0022418896898196063,
+            "sensibilidad_promedio": 0.93152692948362,
+            "sensibilidad_desviacion": 0.0033599377041671785,
+            "f1_promedio": 0.9386970243889191,
+            "f1_desviacion": 0.0022444110480301133,
+            "roc_auc_promedio": 0.9902154200104569,
+            "roc_auc_desviacion": 0.0005899697191416676
+        },
+        "artefactos": []
+    },
+    {
+        "id": "e857e2af95fe41bfae8810eee4ee21bb",
+        "nombre": "Regresion_Logistica",
+        "estado": "FINISHED",
+        "parametros": {
+            "algoritmo": "Regresion_Logistica",
+            "particiones": "5",
+            "registros": "103904",
+            "semilla": "42",
+            "modelo_C": "1.0",
+            "modelo_class_weight": "None",
+            "modelo_dual": "False",
+            "modelo_fit_intercept": "True",
+            "modelo_intercept_scaling": "1",
+            "modelo_l1_ratio": "None",
+            "modelo_max_iter": "1000",
+            "modelo_multi_class": "deprecated",
+            "modelo_n_jobs": "None",
+            "modelo_penalty": "l2",
+            "modelo_random_state": "42",
+            "modelo_solver": "lbfgs",
+            "modelo_tol": "0.0001",
+            "modelo_verbose": "0",
+            "modelo_warm_start": "False"
+        },
+        "metricas": {
+            "exactitud_promedio": 0.8752117186707948,
+            "exactitud_desviacion": 0.002184826013953158,
+            "precision_promedio": 0.8708166980666627,
+            "precision_desviacion": 0.004397690823531409,
+            "sensibilidad_promedio": 0.8360910605219323,
+            "sensibilidad_desviacion": 0.004363549740008556,
+            "f1_promedio": 0.8530857759709697,
+            "f1_desviacion": 0.0025396580095578872,
+            "roc_auc_promedio": 0.9266763583365458,
+            "roc_auc_desviacion": 0.0018911977295232156
+        },
+        "artefactos": []
+    },
+    {
+        "id": "d99f8751561d440192e868d7dbfebf16",
+        "nombre": "Validacion_Configuracion",
+        "estado": "FINISHED",
+        "parametros": {
+            "actividad": "Clasificacion de pasajeros",
+            "algoritmos": "Regresion Logistica y Random Forest",
+            "registros": "103904"
+        },
+        "metricas": {
+            "validacion_configuracion": 1.0
+        },
+        "artefactos": [
+            {
+                "ruta": "validacion_mlflow.txt",
+                "directorio": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,15 @@
+Ejecucion,ID,Parametros,Metricas,Artefactos,Estado
+Comparacion_Estadistica,7bfb40faf087414298f40df7dca17bed,3,3,2,FINISHED
+Comparacion_Final_Modelos,c345d95392c343269cfbf13dd1b769f1,0,0,1,FINISHED
+Random_Forest_Evaluacion_Final,604b272bff674802b7fc7c9e0839795d,3,5,1,FINISHED
+Regresion_Logistica_Evaluacion_Final,1f56ca0133c945bb820333feaff28cdf,3,5,1,FINISHED
+Random_Forest_Evaluacion_Final,69f50a7168b041a9a12db5aadbccc69d,3,5,1,FAILED
+Regresion_Logistica_Evaluacion_Final,5b6155e742674e7cb83088e7c03700b0,3,5,1,FINISHED
+Regresion_Logistica_Evaluacion_Final,9731a1d2c7b64aae90aa2f131cf2ecc9,3,5,1,FAILED
+Random_Forest_Optimizado,d8d20c1b54cf46a2bab2c3cdb0aec17a,7,2,1,FINISHED
+Regresion_Logistica_Optimizado,064952ed5ee64729a5137a6e2055e373,6,2,1,FINISHED
+Random_Forest,2171e4d2610b4077afbfb1312a39c867,23,10,0,FINISHED
+Regresion_Logistica,89846ebe83ce409c813bd11d748f6d5b,19,10,0,FINISHED
+Random_Forest,227c4632bc4749f68c85f849111f80d1,23,10,0,FINISHED
+Regresion_Logistica,e857e2af95fe41bfae8810eee4ee21bb,19,10,0,FINISHED
+Validacion_Configuracion,d99f8751561d440192e868d7dbfebf16,3,1,1,FINISHED
