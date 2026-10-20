@@ -1,6 +1,3 @@
-
-# 12. Entrenamiento, evaluación y registro de modelos en MLflow
-
 import os
 import argparse
 import tempfile
