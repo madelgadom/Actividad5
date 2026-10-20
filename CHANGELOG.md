@@ -1,14 +1,27 @@
 # CHANGELOG - Actividad 5
 
-## Versión 1.0.0
+## Versión 1.0.0 - Implementación inicial
 
-### Estructura inicial del proyecto
-- Creación del repositorio en GitHub.
-- Creación de carpetas para datos originales y limpios.
-- Creación del notebook de entrenamiento.
-- Creación de scripts de preparación y entrenamiento.
+### Preparación de datos
+- Incorporación del dataset *Airline Passenger Satisfaction* de Kaggle.
+- Análisis exploratorio y visualización de datos.
+- Tratamiento de valores nulos, codificación de variables categóricas y estandarización.
 
-## Reporte final
+### Entrenamiento y optimización
+- Implementación de Regresión Logística y Random Forest.
+- Validación cruzada estratificada.
+- Optimización de hiperparámetros mediante Grid Search.
 
-Pendiente de completar después del entrenamiento
-y evaluación del modelo.
+### Evaluación de modelos
+- Evaluación mediante Accuracy, Precision, Recall, F1 y ROC-AUC.
+- Comparación estadística mediante la prueba de McNemar.
+- Selección de Random Forest como mejor modelo, con una exactitud del 96.32 %.
+
+### Implementación de MLOps
+- Configuración de MLflow para el seguimiento de experimentos.
+- Registro de parámetros, métricas, modelos y artefactos.
+- Desarrollo de los archivos `datos_prep.py` y `train.py`.
+- Incorporación de evidencias y documentación en GitHub.
+
+### Resultado final
+Se implementó un proceso reproducible de clasificación de satisfacción de pasajeros, integrando preparación de datos, entrenamiento, evaluación y seguimiento de experimentos mediante MLflow.
