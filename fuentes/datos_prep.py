@@ -1,6 +1,4 @@
 
-# 11. Funciones de limpieza y preparación de datos
-
 import pandas as pd
 
 from sklearn.compose import ColumnTransformer
